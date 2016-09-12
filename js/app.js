@@ -1,8 +1,12 @@
 (function(){
 
+'use strict';
+
 angular.module('LunchCheck',[])
-  .constoller('LunchCheckController', function($scope){
-    #scope.
+  .controller('LunchCheckController', function($scope){
+    $scope.checkLunch = function(){
+
+    };
 
   });
 
