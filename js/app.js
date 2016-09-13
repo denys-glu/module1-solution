@@ -20,7 +20,7 @@
 //     function emptyValue(){
 //       $scope.changeBorder = "redBorder";
 //       $scope.checkLunchResult = "Please enter data first";
-//       $scope.changeFont = "";
+//       $scope.changeFont = "bad";
 //     }
 //     function tooMuch(){
 //       $scope.checkLunchResult = "Too much!"
@@ -33,4 +33,4 @@
 //     }
 //   };
 // })();
-!function(){"use strict";function n(n){function e(){n.changeBorder="redBorder",n.checkLunchResult="Please enter data first",n.changeFont=""}function c(){n.checkLunchResult="Too much!",n.changeFont="bad"}function t(){n.changeBorder="greenBorder",n.checkLunchResult="Enjoy!",n.changeFont="good"}n.listOfFood="",n.checkLunchResult="",n.checkLunch=function(n){n=n.split(",").filter(function(n){return/\S/.test(n)}),n.length>3?c():n.length<=3&&0!=n.length?t():e()}}angular.module("LunchCheck",[]).controller("LunchCheckController",n),n.$inject=["$scope"]}();
+!function(){"use strict";function n(n){function e(){n.changeBorder="redBorder",n.checkLunchResult="Please enter data first",n.changeFont="bad"}function c(){n.checkLunchResult="Too much!",n.changeFont="bad"}function t(){n.changeBorder="greenBorder",n.checkLunchResult="Enjoy!",n.changeFont="good"}n.listOfFood="",n.checkLunchResult="",n.checkLunch=function(n){n=n.split(",").filter(function(n){return/\S/.test(n)}),n.length>3?c():n.length<=3&&0!=n.length?t():e()}}angular.module("LunchCheck",[]).controller("LunchCheckController",n),n.$inject=["$scope"]}();
