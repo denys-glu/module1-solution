@@ -25,4 +25,4 @@
 //     };
 //   };
 // })();
-!function(){"use strict";function c(c){c.listOfFood="a, ,,b, ,,c, ,,",c.checkLunchResult="",c.checkLunch=function(e){e=e.split(",").filter(function(c){return/\S/.test(c)}),e.length>3?(c.checkLunchResult="Too much!",c.changeFont="bad"):(c.checkLunchResult="Enjoy!",c.changeFont="good"),""!=c.listOfFood?c.changeBorder="greenBorder":(c.changeBorder="redBorder",c.checkLunchResult="")}}angular.module("LunchCheck",[]).controller("LunchCheckController",c),c.$inject=["$scope"]}();
+!function(){"use strict";function c(c){c.listOfFood="",c.checkLunchResult="",c.checkLunch=function(e){e=e.split(",").filter(function(c){return/\S/.test(c)}),e.length>3?(c.checkLunchResult="Too much!",c.changeFont="bad"):(c.checkLunchResult="Enjoy!",c.changeFont="good"),""!=c.listOfFood?c.changeBorder="greenBorder":(c.changeBorder="redBorder",c.checkLunchResult="")}}angular.module("LunchCheck",[]).controller("LunchCheckController",c),c.$inject=["$scope"]}();
