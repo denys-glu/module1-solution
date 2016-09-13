@@ -4,7 +4,7 @@
 //   .controller('LunchCheckController', LunchCheckController);
 // LunchCheckController.$inject = ['$scope'];
 //   function LunchCheckController ($scope){
-//     $scope.listOfFood = "a, ,,b, ,,c, ,,";
+//     $scope.listOfFood = "";
 //     $scope.checkLunchResult = "";
 //     $scope.checkLunch = function(list){
 //       list = list.split(',').filter(str => /\S/.test(str));/*triend arrow function*/
